@@ -1,9 +1,8 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'groups_dao.dart';
+part of 'transactions_dao.dart';
 
 // ignore_for_file: type=lint
-mixin _$GroupsDaoMixin on DatabaseAccessor<Database> {
-  $GroupsTable get groups => attachedDatabase.groups;
+mixin _$TransactionsDaoMixin on DatabaseAccessor<Database> {
   $TransactionsTable get transactions => attachedDatabase.transactions;
 }

@@ -45,9 +45,11 @@ class _HomePageState extends State<HomePage> {
                       itemCount: snapshot.requireData.length,
                       itemBuilder: (context, index) => ListTile(
                             title: Text(snapshot.requireData[index].name),
-                            subtitle: Text(snapshot.requireData[index].balance.toString()),
+                            subtitle: Text(
+                                snapshot.requireData[index].balance.toString()),
                             onTap: () {
-                              GoRouterHelper(context).push("/groups/${snapshot.requireData[index].id}");
+                              GoRouterHelper(context).push(
+                                  "/groups/${snapshot.requireData[index].id}");
                             },
                           )),
                 ),
